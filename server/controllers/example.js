@@ -1,13 +1,9 @@
-// const express = require('express')
-// const router = express.Router()
 const router = require('express').Router()
 const logger = require('../utils/logger')
 
 router.get('/', (req, res) => {
-  logger.info('Example route here!')
-  res.status(200).json({ example: 'Hello there!' })
+  logger.info('Visit Example route!')
+  res.status(200).json({ example: 'Hello there! I come in peace and from the backend off this app.' })
 })
-
-logger.info('example router: ', router)
 
 module.exports = router
