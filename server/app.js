@@ -1,9 +1,13 @@
-const express = require('express')
+const express             = require('express')
 require('express-async-errors')
+const mongoose            = require('mongoose')
+const config              = require('./utils/config')
+
 const app = express()
 
-
 app.use(express.json())
+
+mongoose.connect(config.DB_HOST, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
 
 // Routes
 const example = require('./controllers/example')
