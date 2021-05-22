@@ -14,6 +14,7 @@ case 'development':
 
 default:
   DB_HOST = process.env.DEV_DB_HOST
+  PORT = process.env.LOCAL_PORT
   break
 }
 
