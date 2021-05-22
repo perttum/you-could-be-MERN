@@ -2,7 +2,7 @@
 
 Server and client base for quickstarting a MERN app.
 
-Comes with bunch of dependencies pre-installed. Check *package.json* for exact list of the libraries used.
+Comes with bunch of dependencies pre-installed. Check *package.json* files in client and server folders for exact list of the libraries used.
 
 ## Installation
 
