@@ -1,10 +1,10 @@
-#Boilerplate for Mongo, Express, React, Node app
+# Boilerplate for Mongo, Express, React, Node app
 
 Server and client base for quickstarting a MERN app.
 
 Comes with bunch of dependencies pre-installed. Check *package.json* for exact list of the libraries used.
 
-##Installation
+## Installation
 
 1. Clone the project. 
 2. Run *npm install* in both server and client folders.
