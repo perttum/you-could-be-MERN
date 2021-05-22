@@ -8,6 +8,6 @@ Comes with bunch of dependencies pre-installed. Check *package.json* files in cl
 
 1. Clone the project. 
 2. Run *npm install* in both server and client folders.
-3. Create *.env* -file to the root folder of the server
+3. Modify *.env* -file in the root folder of the server to your needs
 4. Start server with *npm run dev* or *npm run start* from the *server* folder
 5. Start client with *npm start* from the *client* folder
