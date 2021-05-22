@@ -1,11 +1,11 @@
 import exampleService from '../services/exampleService'
 
+// This an example of reducer for redux-store
+
 const exampleReducer = (state = [], action) => {
   switch(action.type){
     case 'INITIALIZE_SHOUTS': {
       console.log('action.data in exampleReducer: ', action.data)
-      // const newState = [...action.data]
-      // console.log('newState in exampleReducer: ', newState)
       return action.data
     }
 
@@ -18,7 +18,6 @@ export const initializeShouts = () => {
   return async dispatch => {
     const shouts = await exampleService.getShouts()
     console.log('data in initializeShouts (reducer action call): ', shouts)
-    // const d = [...shouts]
     dispatch({
       type: 'INITIALIZE_SHOUTS',
       data: shouts
