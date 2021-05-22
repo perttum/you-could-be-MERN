@@ -11,16 +11,13 @@ mongoose.connect(config.DB_HOST, { useNewUrlParser: true, useUnifiedTopology: tr
 
 // Routes
 const example = require('./controllers/example')
-
 app.use('/api/example', example)
 
-// UNCOMMENT THE CODE BELOW WHEN USING REACT-ROUTER ON FRONTEND
-// const path = require('path')
-// app.use(express.static(path.join(__dirname, 'build')))
+const path = require('path')
+app.use(express.static(path.join(__dirname, 'build')))
 
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'build', 'index.html'))
-// })
-
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'))
+})
 
 module.exports = app

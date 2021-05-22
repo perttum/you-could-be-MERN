@@ -2,11 +2,6 @@ const router          = require('express').Router()
 const logger          = require('../utils/logger')
 const ExampleModel    = require('../models/exampleModel')
 
-// router.get('/', (req, res) => {
-//   logger.info('Visit Example route!')
-//   res.status(200).json({ example: 'Hello there! I come in peace. And also from the backend off this app.' })
-// })
-
 // Get all example shouts
 router.get('/', async (req, res) => {
   const examples = await ExampleModel.find({})

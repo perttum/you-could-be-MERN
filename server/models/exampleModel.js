@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-// Simple mongo model that stores a shout message and a date it was created
+// Simple Mongo model that stores a shout message and a date it was created
 
 const exampleSchema = new mongoose.Schema({
   shout: {

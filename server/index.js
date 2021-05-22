@@ -1,9 +1,9 @@
-// const express = require('express')
-const http = require('http')
-const app = require('./app.js')
-const server = http.createServer(app)
-const logger = require('./utils/logger')
+const http      = require('http')
+const app       = require('./app.js')
+const logger    = require('./utils/logger')
+const config    = require('./utils/config')
+const server    = http.createServer(app)
 
-var listener = server.listen(3001, () => {
-  logger.info('app is on ' + listener.address().port)
+server.listen(config.PORT, () => {
+  logger.info('App is running in port: ' + config.PORT)
 })

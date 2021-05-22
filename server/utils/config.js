@@ -1,5 +1,20 @@
 require('dotenv').config()
 
-let DB_HOST = process.env.DEV_DB_HOST
+let PORT
+let DB_HOST
 
-module.exports = { DB_HOST }
+switch(process.env.NODE_ENV){
+
+case 'development':
+  DB_HOST = process.env.DEV_DB_HOST
+  PORT = process.env.LOCAL_PORT
+  break
+
+  // case 'production':
+
+default:
+  DB_HOST = process.env.DEV_DB_HOST
+  break
+}
+
+module.exports = { PORT, DB_HOST }

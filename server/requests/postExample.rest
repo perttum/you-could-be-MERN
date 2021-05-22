@@ -2,5 +2,5 @@ POST http://localhost:3000/api/example/
 Content-Type: application/json
 
 {
-  "shout": "Hi!"
+  "shout": "Yell like hell!"
 }
